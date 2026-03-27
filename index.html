@@ -1,0 +1,274 @@
+export default function EarthyDivaLandingPage() {
+  const services = [
+    {
+      title: "Executive Support",
+      description: "Inbox management, calendar coordination, scheduling, follow-ups, and polished day-to-day support.",
+    },
+    {
+      title: "Creative Operations",
+      description: "Keeping projects, launches, content, and moving parts organized so ideas actually get executed.",
+    },
+    {
+      title: "Research & Planning",
+      description: "Vendor sourcing, travel planning, event coordination, and thoughtful behind-the-scenes logistics.",
+    },
+    {
+      title: "Business Support",
+      description: "Documents, systems, communications, light marketing support, and reliable right-hand assistance.",
+    },
+  ];
+
+  const packages = [
+    {
+      title: "Inbox + Calendar Reset",
+      price: "$100",
+      description:
+        "A focused reset to clean up your email, organize your schedule, and create more breathing room.",
+    },
+    {
+      title: "Business Support Starter",
+      price: "$150",
+      description:
+        "Administrative help, organization, and light strategy support to get your business moving again.",
+      featured: true,
+    },
+    {
+      title: "Ongoing Support",
+      price: "Starting at $300/month",
+      description:
+        "Consistent support for entrepreneurs, creatives, and busy professionals who need a trusted right hand.",
+    },
+  ];
+
+  const highlights = [
+    "Trusted with confidential, high-level work",
+    "Calm and effective in fast-paced environments",
+    "Proactive, polished, and detail-oriented",
+    "Strong communicator and natural problem solver",
+  ];
+
+  const process = [
+    "Reach out and tell me what feels overwhelming.",
+    "I identify the support that will help most quickly.",
+    "We create a simple plan and get things moving.",
+  ];
+
+  return (
+    <div className="min-h-screen bg-[#F5F1E8] text-[#3E2F24]">
+      <section className="relative overflow-hidden border-b border-[#e6dcc9]">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(200,169,106,0.18),_transparent_35%),radial-gradient(circle_at_bottom_right,_rgba(141,155,125,0.12),_transparent_28%),linear-gradient(135deg,#f8f4ec_0%,#f5f1e8_45%,#efe6d5_100%)]" />
+        <div className="relative mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-24">
+          <div className="grid items-center gap-12 lg:grid-cols-[1.1fr_0.9fr]">
+            <div>
+              <p className="mb-4 inline-flex rounded-full border border-[#c8a96a]/40 bg-white/70 px-4 py-1.5 text-xs uppercase tracking-[0.28em] text-[#8a6a34] shadow-sm">
+                Earthy Diva Business Support
+              </p>
+              <h1 className="max-w-3xl text-5xl font-semibold leading-tight md:text-6xl" style={{ fontFamily: 'serif' }}>
+                Elevated support for busy people with big ideas.
+              </h1>
+              <p className="mt-6 max-w-2xl text-lg leading-8 text-[#5f4b3b]">
+                I help professionals, creatives, and entrepreneurs get organized, reduce overwhelm,
+                and keep things moving behind the scenes with calm, polished support.
+              </p>
+              <div className="mt-8 flex flex-wrap gap-4">
+                <a
+                  href="mailto:lizabroome@gmail.com?subject=Interested%20in%20working%20with%20you"
+                  className="rounded-2xl bg-[#5A4634] px-6 py-3 text-sm font-medium text-white shadow-lg shadow-[#5A4634]/20 transition hover:-translate-y-0.5"
+                >
+                  Work With Me
+                </a>
+                <a
+                  href="#services"
+                  className="rounded-2xl border border-[#5A4634]/30 bg-white/60 px-6 py-3 text-sm font-medium text-[#4a392c] transition hover:bg-white"
+                >
+                  View Services
+                </a>
+              </div>
+              <div className="mt-8 flex flex-wrap gap-3 text-sm text-[#6b5645]">
+                <span className="rounded-full bg-white/60 px-3 py-1">Los Angeles, CA</span>
+                <span className="rounded-full bg-white/60 px-3 py-1">Executive Virtual Assistant</span>
+                <span className="rounded-full bg-white/60 px-3 py-1">Creative Operations Support</span>
+              </div>
+            </div>
+
+            <div className="grid gap-4 md:grid-cols-2">
+              <div className="rounded-[2rem] border border-white/70 bg-white/75 p-4 shadow-xl backdrop-blur md:col-span-2">
+                <div className="h-72 rounded-[1.5rem] bg-[linear-gradient(135deg,#e9dcc5_0%,#d7c3a1_45%,#b48d62_100%)] p-6 text-[#3f3024] shadow-inner">
+                  <div className="flex h-full flex-col justify-between rounded-[1.25rem] border border-white/30 bg-white/10 p-5 backdrop-blur-sm">
+                    <div>
+                      <p className="text-xs uppercase tracking-[0.22em] text-[#5A4634]/80">Signature Support</p>
+                      <h3 className="mt-3 text-3xl font-semibold leading-tight" style={{ fontFamily: 'serif' }}>
+                        Grounded. Organized. Dependable.
+                      </h3>
+                    </div>
+                    <p className="max-w-sm text-sm leading-7 text-[#4c3b2d]">
+                      The right-hand support you call when there are a lot of moving pieces and no time for things to slip.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="rounded-[1.75rem] border border-white/70 bg-[#f8f4ec] p-5 shadow-lg">
+                <p className="text-xs uppercase tracking-[0.22em] text-[#8a6a34]">What I bring</p>
+                <div className="mt-4 space-y-3">
+                  {highlights.map((item) => (
+                    <div key={item} className="flex gap-3 rounded-2xl bg-white/80 p-3">
+                      <div className="mt-1 h-2.5 w-2.5 rounded-full bg-[#c8a96a]" />
+                      <p className="text-sm leading-6 text-[#4a392c]">{item}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+              <div className="rounded-[1.75rem] bg-[#5A4634] p-5 text-white shadow-lg">
+                <p className="text-xs uppercase tracking-[0.22em] text-[#e7cf9d]">Best for</p>
+                <div className="mt-4 space-y-3 text-sm leading-7 text-[#f3e8d6]">
+                  <p>Entrepreneurs who need structure</p>
+                  <p>Creatives with too many moving parts</p>
+                  <p>Professionals who need a trusted right hand</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-24">
+        <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+          <div>
+            <p className="text-sm uppercase tracking-[0.25em] text-[#B0894F]">About</p>
+            <h2 className="mt-3 text-3xl font-semibold md:text-4xl" style={{ fontFamily: 'serif' }}>
+              Support that feels calm, capable, and beautifully handled.
+            </h2>
+            <p className="mt-5 max-w-xl leading-8 text-[#6b5645]">
+              With experience supporting executives, creatives, and entrepreneurs in fast-paced environments,
+              I bring a grounded yet elevated approach to virtual assistance and creative operations. I handle the
+              details, protect your time, and help keep momentum steady.
+            </p>
+          </div>
+
+          <div className="grid gap-4 sm:grid-cols-3">
+            <div className="rounded-[1.75rem] bg-[linear-gradient(180deg,#eadfcf_0%,#d2b48c_100%)] p-4 shadow-lg sm:mt-10">
+              <div className="h-56 rounded-[1.25rem] border border-white/40 bg-white/20" />
+            </div>
+            <div className="rounded-[1.75rem] bg-[linear-gradient(180deg,#dfe3d7_0%,#9aa786_100%)] p-4 shadow-lg">
+              <div className="h-72 rounded-[1.25rem] border border-white/40 bg-white/20" />
+            </div>
+            <div className="rounded-[1.75rem] bg-[linear-gradient(180deg,#e9d3c2_0%,#b78367_100%)] p-4 shadow-lg sm:mt-16">
+              <div className="h-52 rounded-[1.25rem] border border-white/40 bg-white/20" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" className="border-y border-[#e6dcc9] bg-white/50">
+        <div className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-24">
+          <div className="mb-12 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+            <div>
+              <p className="text-sm uppercase tracking-[0.25em] text-[#B0894F]">Services</p>
+              <h2 className="mt-2 text-3xl font-semibold md:text-4xl" style={{ fontFamily: 'serif' }}>
+                How I support you
+              </h2>
+            </div>
+            <p className="max-w-xl text-[#6B5645] leading-8">
+              Thoughtful admin, business, and coordination support designed to give you time back and make work feel lighter.
+            </p>
+          </div>
+
+          <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+            {services.map((service) => (
+              <div key={service.title} className="rounded-[1.75rem] border border-[#E7DCC7] bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+                <div className="mb-5 h-12 w-12 rounded-2xl bg-[linear-gradient(135deg,#efe4cf_0%,#d9c0a0_100%)]" />
+                <h3 className="text-lg font-semibold" style={{ fontFamily: 'serif' }}>{service.title}</h3>
+                <p className="mt-3 text-sm leading-7 text-[#6b5645]">{service.description}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-7xl px-6 py-16 md:px-10 md:py-24">
+        <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr]">
+          <div className="rounded-[2rem] bg-[#5A4634] p-8 text-white shadow-xl md:p-10">
+            <p className="text-sm uppercase tracking-[0.25em] text-[#E8D0A0]">Process</p>
+            <h2 className="mt-3 text-3xl font-semibold" style={{ fontFamily: 'serif' }}>
+              Working together is simple.
+            </h2>
+            <div className="mt-8 space-y-5">
+              {process.map((step, index) => (
+                <div key={step} className="flex gap-4">
+                  <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-white/10 text-sm font-semibold text-[#f2dfba]">
+                    {index + 1}
+                  </div>
+                  <p className="pt-1 text-sm leading-7 text-[#f3e8d6]">{step}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <div className="mb-12">
+              <p className="text-sm uppercase tracking-[0.25em] text-[#B0894F]">Packages</p>
+              <h2 className="mt-2 text-3xl font-semibold md:text-4xl" style={{ fontFamily: 'serif' }}>
+                Ways to work with me
+              </h2>
+            </div>
+            <div className="grid gap-5 md:grid-cols-3">
+              {packages.map((pkg) => (
+                <div
+                  key={pkg.title}
+                  className={`rounded-[2rem] border p-6 shadow-sm ${
+                    pkg.featured
+                      ? 'border-[#c8a96a] bg-[linear-gradient(180deg,#fffaf2_0%,#f7efdf_100%)] shadow-lg'
+                      : 'border-[#E8DCC8] bg-white'
+                  }`}
+                >
+                  {pkg.featured ? (
+                    <span className="inline-flex rounded-full bg-[#5A4634] px-3 py-1 text-xs uppercase tracking-[0.18em] text-white">
+                      Most Popular
+                    </span>
+                  ) : null}
+                  <h3 className="mt-4 text-xl font-semibold" style={{ fontFamily: 'serif' }}>{pkg.title}</h3>
+                  <p className="mt-3 text-lg font-medium text-[#B0894F]">{pkg.price}</p>
+                  <p className="mt-4 text-sm leading-7 text-[#6B5645]">{pkg.description}</p>
+                  <a
+                    href="mailto:lizabroome@gmail.com?subject=Interested%20in%20your%20services"
+                    className="mt-6 inline-flex rounded-2xl bg-[#EFE4CF] px-4 py-2 text-sm font-medium text-[#4A392C] transition hover:bg-[#E7D7BA]"
+                  >
+                    Get started
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-6 pb-20 md:px-10 md:pb-24">
+        <div className="rounded-[2rem] border border-[#E7DCC7] bg-white/80 p-8 shadow-lg md:p-12">
+          <div className="grid gap-8 md:grid-cols-[1.2fr_0.8fr] md:items-center">
+            <div>
+              <p className="text-sm uppercase tracking-[0.25em] text-[#B0894F]">Let’s connect</p>
+              <h2 className="mt-3 text-3xl font-semibold md:text-4xl" style={{ fontFamily: 'serif' }}>
+                Ready for more ease, organization, and follow-through?
+              </h2>
+              <p className="mt-4 max-w-2xl leading-8 text-[#6B5645]">
+                If you need a reliable right hand to help keep your schedule, business, or creative projects moving, I’d love to support you.
+              </p>
+            </div>
+            <div className="rounded-[1.5rem] bg-[#F8F4EC] p-6 shadow-inner">
+              <div className="space-y-4 text-sm text-[#4A392C]">
+                <p><span className="font-medium">Email:</span> lizabroome@gmail.com</p>
+                <p><span className="font-medium">Phone:</span> 310-498-5686</p>
+                <a
+                  href="mailto:lizabroome@gmail.com?subject=Interested%20in%20working%20with%20you"
+                  className="inline-flex rounded-2xl bg-[#5A4634] px-5 py-3 font-medium text-white transition hover:-translate-y-0.5"
+                >
+                  Inquire Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
